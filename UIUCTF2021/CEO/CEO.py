@@ -1,7 +1,7 @@
 from itertools import permutations
 
 common_words = []
-num_words_in_pw = 1
+num_words_in_pw = 2
 
 
 with open('/Users/leonmlodzian/Downloads/3000+ Common English Words.txt', 'r') as f:
@@ -17,7 +17,7 @@ def write_flag(f, perm):
     f.write(flag)
 
 
-with open('dictionary.txt', 'w') as f:
+with open('dictionary' + str(num_words_in_pw) + '.txt', 'w') as f:
     perms = permutations(common_words[3:], num_words_in_pw)
     for perm in perms:
         write_flag(f, perm)
