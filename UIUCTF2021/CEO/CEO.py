@@ -4,7 +4,7 @@ common_words = []
 num_words_in_pw = 2
 
 
-with open('/Users/leonmlodzian/Downloads/3000+ Common English Words.txt', 'r') as f:
+with open('3000+ Common English Words.txt', 'r') as f:
     for line in f.readlines():
         common_words.append(line[:-1])
 
